@@ -2,6 +2,26 @@
 
 {% block content %}
 
-<h1>お問い合わせ</h1>
+<div class="inquiry_section">
+    <h1>お問い合わせ</h1>
+    <p>ご意見、ご感想、バグ報告など、お待ちしております。</p>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.non_field_errors }}
+
+        {% for field in form %}
+            <div>
+                <label for="{{ field.id_for_label }}">
+                    {{ field.label_tag }}
+                </label>
+                <div>
+                    {{ field }}
+                    {{ field.errors }}
+                </div>
+            </div>
+        {% endfor %}
+        <button type="submit">送信</button>
+    </form>
+</div>
 
 {% endblock %}
