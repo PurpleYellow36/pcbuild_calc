@@ -21,8 +21,8 @@
                   メニュー
                 </a>
                 <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                  <li><a class="dropdown-item" href="#">計算ツール</a></li>
-                  <li><a class="dropdown-item" href="#">このサービスについて</a></li>
+                  <li><a class="dropdown-item" href="{% url 'calc:index' %}">計算ツール</a></li>
+                  <li><a class="dropdown-item" href="{% url 'calc:description' %}">このサービスについて</a></li>
                   <li><a class="dropdown-item" href="#">お問い合わせフォーム</a></li>
                 </ul>
               </li>
@@ -36,8 +36,8 @@
     <div class="container">
         <footer class="py-3 my-4">
           <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">計算ツール</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">このサービスについて</a></li>
+            <li class="nav-item"><a href="{% url 'calc:index' %}" class="nav-link px-2 text-muted">計算ツール</a></li>
+            <li class="nav-item"><a href="{% url 'calc:description' %}" class="nav-link px-2 text-muted">このサービスについて</a></li>
             <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">お問い合わせフォーム</a></li>
           </ul>
           <p class="text-center text-muted">&copy; 2021 PCBUILD_CALC</p>

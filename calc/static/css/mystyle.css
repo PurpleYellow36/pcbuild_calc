@@ -1,3 +1,8 @@
 body {
     text-align: center;
 }
+
+.description_section {
+    margin-top: 4rem;
+    margin-bottom: 5rem;
+}
