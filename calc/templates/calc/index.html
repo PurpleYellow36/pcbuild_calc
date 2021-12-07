@@ -1,9 +1,70 @@
 {% extends 'calc/base.html' %}
 
+{% load static %}
+
 {% block content %}
 
+<div class="index_section">
+    <p><h1>PCBUILD_CALC</h1></p>
+    <img src="{% static 'img/calculator.png'%}">
+    <div class="index_section">
+        <p>PCパーツの価格を計算できます。</p>
+        <p>合計額はリアルタイムで更新されます。</p>
+    </div>
 
-<h1>Hello PCBUILD_CALC WORLD!!!!!!!</h1>
+    <table class="pcparts_table" id="PartsTable">
+        <thead>
+            <tr>
+                <th colspan="2">パーツの一覧</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>グラフィックボード:</td>
+                <td><input type="number" class="price" id="graphic_board">円</td>
+            </tr>
+            <tr>
+                <td>内蔵ドライブ:</td>
+                <td><input type="number" class="price" id="drive">円</td>
+            </tr>
+            <tr>
+                <td>マザーボード:</td>
+                <td><input type="number" class="price" id="mother_board">円</td>
+            </tr>
+            <tr>
+                <td>冷却機器:</td>
+                <td><input type="number" class="price" id="cooler">円</td>
+            </tr>
+            <tr>
+                <td>PCケース:</td>
+                <td><input type="number" class="price" id="case">円</td>
+            </tr>
+            <tr>
+                <td>メモリ:</td>
+                <td><input type="number" class="price" id="memory">円</td>
+            </tr>
+            <tr>
+                <td>電源:</td>
+                <td><input type="number" class="price" id="power">円</td>
+            </tr>
+            <tr>
+                <td>OS:</td>
+                <td><input type="number" class="price" id="os">円</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="calc_buttons">
+        <button type="button" class="btn btn-danger" onclick="ClearPrice()">全てクリア</button>
+    </div>
+
+    <div>
+        合計：&nbsp;<b><span id="total_sum_value"></span>円</b>
+    </div>
+</div>
+
+<div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from 
+<a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
 
 
 {% endblock %}

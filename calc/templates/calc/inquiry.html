@@ -3,7 +3,7 @@
 {% block content %}
 
 <div class="inquiry_section">
-    <h1>お問い合わせ</h1>
+    <p><h1>お問い合わせ</h1></p>
     <p>ご意見、ご感想、バグ報告など、お待ちしております。</p>
     <form method="post">
         {% csrf_token %}
@@ -20,7 +20,7 @@
                 </div>
             </div>
         {% endfor %}
-        <button type="submit">送信</button>
+        <button type="submit" class="btn btn-secondary">送信</button>
     </form>
 </div>
 
