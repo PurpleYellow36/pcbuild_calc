@@ -9,6 +9,7 @@
      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 </head>
 <body class="bg-light">
+    <!--ヘッダー-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
           <a class="navbar-brand" href="{% url 'calc:index' %}">PCBUILD_CALC</a>
@@ -34,6 +35,7 @@
 
     {% block content %}{% endblock %}
 
+    <!--フッター-->
     <div class="container">
         <footer class="py-3 my-4">
           <ul class="nav justify-content-center border-bottom pb-3 mb-3">
