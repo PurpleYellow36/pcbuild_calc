@@ -1,1 +1,1 @@
-web: gunicorn pcbuild_calc.wsgi
+web: gunicorn pcbuild_calc.wsgi --log-file -
