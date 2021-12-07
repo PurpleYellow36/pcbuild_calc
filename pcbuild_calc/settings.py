@@ -29,7 +29,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-+wor8v)f(s*%lcwnj84e_o8qm)sa_5gg0khg5(8--6bhci7xwn'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['https://pcbuildcalc.herokuapp.com', '127.0.0.1']
 
