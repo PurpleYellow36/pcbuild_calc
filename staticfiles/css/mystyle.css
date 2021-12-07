@@ -1,0 +1,43 @@
+body {
+    text-align: center;
+}
+
+table {
+    margin: auto;
+}
+
+.index_section {
+    margin-top: 4rem;
+    margin-bottom: 5rem;
+}
+
+.description_section {
+    margin-top: 4rem;
+    margin-bottom: 5rem;
+}
+
+.inquiry_section {
+    margin-top: 4rem;
+    margin-bottom: 5rem;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.pcparts_table {
+    border-collapse: separate;
+    border-spacing: 2rem 1rem;
+}
+
+.calc_buttons {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.inquiry_form {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
