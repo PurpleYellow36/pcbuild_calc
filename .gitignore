@@ -1,8 +1,8 @@
-# 拡張子が.pycのファイル
-*.pyc
-
 # 環境変数の設定ファイル
 .env
+
+# 拡張子が.pycのファイル
+*.pyc
 
 # SECRET_KEYが記述されたファイル
 local_settings.py
