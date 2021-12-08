@@ -5,7 +5,7 @@ from django.conf import settings
 class InquiryForm(forms.Form):
     name = forms.CharField(label='名前', max_length=50)
     email = forms.EmailField(label='メールアドレス')
-    inquiry = forms.CharField(label='お問い合わせ内容', widget=forms.Textarea(attrs={'rows':5, 'cols':16}))
+    inquiry = forms.CharField(label='お問い合わせ内容', widget=forms.Textarea(attrs={'rows':6, 'cols':24}))
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
