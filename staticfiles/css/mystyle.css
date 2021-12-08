@@ -14,11 +14,15 @@ table {
 .description_section {
     margin-top: 4rem;
     margin-bottom: 5rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
 }
 
 .inquiry_section {
     margin-top: 4rem;
     margin-bottom: 5rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
 }
 
 input[type="number"]::-webkit-outer-spin-button,
