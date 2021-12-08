@@ -37,7 +37,7 @@
     {% if messages %}
       <div class="container">
         <div class="row">
-          <div class="col-md-6 col-md-offset-3 messages_style w-90">
+          <div class="col-md-10 col-md-offset-1 messages_style">
             <ul class="messages" style="list-style: none;">
               {% for message in messages %}
               <li {% if message.tags %} class="{{ message.tags }}" {% endif %}>
