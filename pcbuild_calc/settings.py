@@ -13,6 +13,8 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 from pathlib import Path
 from django.contrib.messages import constants as messages
 
+from .local_settings import SECRET_KEY
+
 import os
 import environ
 
@@ -26,9 +28,6 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
-
-# SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-+wor8v)f(s*%lcwnj84e_o8qm)sa_5gg0khg5(8--6bhci7xwn'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
