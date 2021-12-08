@@ -21,6 +21,9 @@ table {
 .inquiry_section {
     margin-top: 4rem;
     margin-bottom: 5rem;
+}
+
+.inquiry_input_section {
     margin-left: 2rem;
     margin-right: 2rem;
 }

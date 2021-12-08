@@ -9,17 +9,19 @@
         {% csrf_token %}
         {{ form.non_field_errors }}
 
-        {% for field in form %}
-            <div class="inquiry_form">
-                <label for="{{ field.id_for_label }}">
-                    {{ field.label_tag }}
-                </label>
-                <div>
-                    {{ field }}
-                    {{ field.errors }}
+        <div class="inquiry_input_section">
+            {% for field in form %}
+                <div class="inquiry_form">
+                    <label for="{{ field.id_for_label }}">
+                        {{ field.label_tag }}
+                    </label>
+                    <div>
+                        {{ field }}
+                        {{ field.errors }}
+                    </div>
                 </div>
-            </div>
-        {% endfor %}
+            {% endfor %}
+        </div>
         <button type="submit" class="btn btn-secondary">送信</button>
     </form>
 </div>
