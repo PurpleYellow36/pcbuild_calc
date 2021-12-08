@@ -11,4 +11,5 @@ HTML<br>
 CSS<br>
 JavaScript
 # 開発環境
-VSCode 1.62.3
+OS：Windows10<br>
+IDE：VSCode 1.62.3
