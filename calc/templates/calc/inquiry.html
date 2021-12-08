@@ -8,8 +8,6 @@
     <form method="post">
         {% csrf_token %}
         {{ form.non_field_errors }}
-
-        <div class="inquiry_input_section">
             {% for field in form %}
                 <div class="inquiry_form">
                     <label for="{{ field.id_for_label }}">
@@ -21,7 +19,6 @@
                     </div>
                 </div>
             {% endfor %}
-        </div>
         <button type="submit" class="btn btn-secondary">送信</button>
     </form>
 </div>
