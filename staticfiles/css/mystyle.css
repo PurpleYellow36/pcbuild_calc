@@ -49,5 +49,5 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .messages_style {
-    text-align: center;
+    text-align: left;
 }
