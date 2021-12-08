@@ -2,6 +2,7 @@ from django.shortcuts import render
 from django.views import generic
 from . import forms
 from django.urls import reverse_lazy
+from django.contrib import messages
 
 def index(request):
     return render(request, 'calc/index.html')
@@ -16,4 +17,5 @@ class InquiryView(generic.FormView):
 
     def form_valid(self, form):
         form.send_email()
+        messages.success(self.request, '送信しました。')
         return super().form_valid(form)
